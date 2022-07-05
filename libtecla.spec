@@ -66,7 +66,7 @@ Statyczna biblioteka tecla.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
+%{__make} -j1 install \
 	BINDIR=$RPM_BUILD_ROOT%{_bindir} \
 	INCDIR=$RPM_BUILD_ROOT%{_includedir} \
 	LIBDIR=$RPM_BUILD_ROOT%{_libdir} \
